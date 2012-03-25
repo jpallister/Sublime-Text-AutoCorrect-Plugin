@@ -1,0 +1,10 @@
+A small sublime text plugin that autocorrects when you press space
+
+Copy these files to .config/sublime-text-2/Packages/AutoCorrect/
+Run make in the src directory.
+
+The autocorrect list is taken from wikipedia:
+   http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines
+
+Todo list
+  - Other keys to trigger autocorrect
