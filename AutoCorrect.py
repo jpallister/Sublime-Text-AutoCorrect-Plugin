@@ -27,5 +27,5 @@ class AutoCorrectCommand(sublime_plugin.TextCommand):
                     sublime.status_message("AutoCorrect: \"" + sword + "\" corrected to \"" + correct + "\"")
                     self.view.replace(edit, word, correct)
 
-            self.view.run_command("insert", {"characters": " "})
+        self.view.run_command("insert", {"characters": " "})
 

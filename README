@@ -1,10 +1,18 @@
 A small sublime text plugin that autocorrects when you press space
 
 Copy these files to .config/sublime-text-2/Packages/AutoCorrect/
-Run make in the src directory.
 
-The autocorrect list is taken from wikipedia:
+To build from source run make in the src directory (if Sublime Text 2
+is running it will segfault as the library is changed beneath it...)
+
+Tested on Ubuntu Precise 12.04 x64.
+
+The (modified) autocorrect list is taken from wikipedia:
    http://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines
+
+Dependencies:
+    Boost python
+    Python 2.6 dev
 
 Todo list
   - Other keys to trigger autocorrect
