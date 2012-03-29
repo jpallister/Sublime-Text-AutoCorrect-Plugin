@@ -10,13 +10,15 @@ corrections = {"bitwdith": "bit-width", "wdith": "width"}
 
 class AutoCorrectCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        self.view.end_edit(edit)
+        self.view.run_command("insert", {"characters": " "})
+
+        sublime.set_timeout(self.do_correction, 10)
+
+    def do_correction(self):
         edit = self.view.begin_edit()
         rs = self.view.sel()
 
         regions_to_correct = []
-
-        self.view.run_command("insert", {"characters": " "})
 
         for r in rs:
             if r.b - r.a == 0:
