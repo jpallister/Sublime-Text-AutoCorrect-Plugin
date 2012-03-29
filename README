@@ -1,4 +1,4 @@
-A small sublime text plugin that autocorrects when you press space
+A small sublime text plugin that autocorrects when you press space.
 
 Copy these files to .config/sublime-text-2/Packages/AutoCorrect/
 
@@ -16,3 +16,8 @@ Dependencies:
 
 Todo list
   - Other keys to trigger autocorrect
+  - Use defined corrections
+
+Bugs
+  - The selection doesn't appear correctly if the correction contains punctuation or spaces
+  - Some corrections in the list have multiple entries
