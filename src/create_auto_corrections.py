@@ -26,7 +26,7 @@ for line in wiki_list.readlines():
         oword = f[max(f.keys())]
         print "Multiple options for", s[0], "selecting", oword
 
-    out.write("\"" + s[0].strip() + "\" \"" + oword.strip() + "\"")
+    out.write("\"" + s[0].strip() + "\" \"" + oword.strip() + "\"\n")
 
 
 out.close()
